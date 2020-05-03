@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Success</title>
+
+    <style>
+      p {
+        /* Center the form on the page */
+        margin: 0 auto;
+        width: 500px;
+        /* Form outline */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+      }
+      </style>
+  </head>
+
+  <body>
+    <center>
+    {% if name %}
+      <h1>Hello {{ name }}!</h1>
+    {% else %}
+      <h1>Hello Nobody!</h1>
+    {% endif %}
+    </center>
+
+    {% if age %}
+      <p>Your age:  {{ age }}
+    {% else %}
+      <p>Your age: nonexistant
+    {% endif %}
+
+    <br />Your favorite NINJA: Patrick Huston</p>
+  </body>
+</html>
